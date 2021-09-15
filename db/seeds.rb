@@ -21,7 +21,7 @@ e = Skill.create(name: 'Homework 2', description: 'Cassino')
 skills = [a,b,c,d,e]
 
 5.times do |i|
-  user = User.create(name: Faker.name)
+  user = User.create(name: Faker::Name.name)
     5.times do |i|
       Grade.create(score: rand(100), skill_id:skills[i].id, user_id: user.id)
     end
